@@ -5,7 +5,10 @@
 ### Android Docs
 * Documentation for app developer: https://developer.android.com/docs
 
-### Android - Getting Started
+### Getting Started
+* Build your first app: https://developer.android.com/training/basics/firstapp/
+
+### Android
 * Dashboards: https://developer.android.com/about/dashboards/index.html
 * Platform Architecture: https://developer.android.com/guide/platform
 
