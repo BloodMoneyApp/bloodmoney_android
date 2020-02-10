@@ -1,7 +1,12 @@
 # bloodmoney_android
 
-## Android - Getting Started
-* Dashboards https://developer.android.com/about/dashboards/index.html
+## Learn Android
+
+### Android Docs
+* Documentation for app developer: https://developer.android.com/docs
+
+### Android - Getting Started
+* Dashboards: https://developer.android.com/about/dashboards/index.html
 * Platform Architecture: https://developer.android.com/guide/platform
 
 ### Versions
