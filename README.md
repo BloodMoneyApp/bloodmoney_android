@@ -9,6 +9,7 @@
 * Build your first app: https://developer.android.com/training/basics/firstapp/
 
 ### Android
+* Application Fundamentals: https://developer.android.com/guide/components/fundamentals
 * Dashboards: https://developer.android.com/about/dashboards/index.html
 * Platform Architecture: https://developer.android.com/guide/platform
 
