@@ -14,14 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_measurement_detail);
     }
 
-
-    public void onClick(){
-        setContentView(R.layout.activity_measurement_list);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_measurement_list);
     }
 }
