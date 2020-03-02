@@ -2,4 +2,6 @@
     <string name="app_name">BloodMoney</string>
     <string name="newMeasurement">Add new Measurement</string>
     <string name="showAllMeasurements">Show All Measurements</string>
+    <string name="title_measurement_list">Measurements</string>
+    <string name="title_measurement_detail">Measurement Detail</string>
 </resources>
