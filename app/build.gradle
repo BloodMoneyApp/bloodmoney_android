@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "org.woehlke.bloodmoney"
-        minSdkVersion 23
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -55,6 +55,10 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'org.jsoup:jsoup:1.12.1'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
 
     //implementation 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
     //implementation 'org.springframework.android:spring-android-auth:2.0.0.M2'
