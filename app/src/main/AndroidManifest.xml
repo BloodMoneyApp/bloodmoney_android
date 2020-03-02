@@ -28,7 +28,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.woehlke.bloodmoney.MeasurementListActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="org.woehlke.bloodmoney.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

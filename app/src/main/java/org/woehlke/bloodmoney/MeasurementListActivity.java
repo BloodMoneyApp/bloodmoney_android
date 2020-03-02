@@ -17,8 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.woehlke.bloodmoney.dummy.DummyContent;
-
 import java.util.List;
 
 /**
@@ -69,22 +67,22 @@ public class MeasurementListActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, DummyContent.ITEMS, mTwoPane));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, BloodPressureMeasurementDao.ITEMS, mTwoPane));
     }
 
     public static class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 
         private final MeasurementListActivity mParentActivity;
-        private final List<DummyContent.DummyItem> mValues;
+        private final List<BloodPressureMeasurement> mValues;
         private final boolean mTwoPane;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DummyContent.DummyItem item = (DummyContent.DummyItem) view.getTag();
+                BloodPressureMeasurement item = (BloodPressureMeasurement) view.getTag();
                 if (mTwoPane) {
                     Bundle arguments = new Bundle();
-                    arguments.putString(MeasurementDetailFragment.ARG_ITEM_ID, item.id);
+                    arguments.putString(MeasurementDetailFragment.ARG_ITEM_ID, item.getId().toString());
                     MeasurementDetailFragment fragment = new MeasurementDetailFragment();
                     fragment.setArguments(arguments);
                     mParentActivity.getSupportFragmentManager().beginTransaction()
@@ -93,7 +91,7 @@ public class MeasurementListActivity extends AppCompatActivity {
                 } else {
                     Context context = view.getContext();
                     Intent intent = new Intent(context, MeasurementDetailActivity.class);
-                    intent.putExtra(MeasurementDetailFragment.ARG_ITEM_ID, item.id);
+                    intent.putExtra(MeasurementDetailFragment.ARG_ITEM_ID, item.getId().toString());
 
                     context.startActivity(intent);
                 }
@@ -101,7 +99,7 @@ public class MeasurementListActivity extends AppCompatActivity {
         };
 
         SimpleItemRecyclerViewAdapter(MeasurementListActivity parent,
-                                      List<DummyContent.DummyItem> items,
+                                      List<BloodPressureMeasurement> items,
                                       boolean twoPane) {
             mValues = items;
             mParentActivity = parent;
@@ -117,8 +115,8 @@ public class MeasurementListActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
-            holder.mIdView.setText(mValues.get(position).id);
-            holder.mContentView.setText(mValues.get(position).content);
+            holder.mIdView.setText(mValues.get(position).getId().toString());
+            holder.mContentView.setText(mValues.get(position).details());
 
             holder.itemView.setTag(mValues.get(position));
             holder.itemView.setOnClickListener(mOnClickListener);

@@ -12,8 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.woehlke.bloodmoney.dummy.DummyContent;
-
 /**
  * A fragment representing a single Measurement detail screen.
  * This fragment is either contained in a {@link MeasurementListActivity}
