@@ -35,10 +35,13 @@ public class BloodPressureMeasurement implements Serializable {
 
     public String details(){
         StringBuffer b = new StringBuffer();
-        b.append(date.toString());
         b.append(systolicTopNumber);
+        b.append(" ");
         b.append(diastolicBottomNumber);
+        b.append(" ");
         b.append(pulse);
+        b.append(" ");
+        b.append(date.toString());
         return b.toString();
     }
 
