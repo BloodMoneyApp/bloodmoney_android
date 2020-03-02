@@ -36,6 +36,7 @@
         android:layout_height="56dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="52dp"
+        android:background="#FFFFFF"
         android:text="@string/showAllMeasurements"
         android:textColor="@color/colorPrimaryDark"
         android:visibility="visible"
