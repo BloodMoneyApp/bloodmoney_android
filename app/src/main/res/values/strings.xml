@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BloodMoney</string>
+    <string name="newMeasurement">Add new Measurement</string>
+    <string name="showAllMeasurements">Show All Measurements</string>
 </resources>

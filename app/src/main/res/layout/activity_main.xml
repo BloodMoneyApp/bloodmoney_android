@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,5 +16,32 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/newMeasurement"
+        android:layout_width="316dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/newMeasurement"
+        android:textColor="@android:color/holo_green_dark"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@id/showAllMeasurementsButton"
+        app:layout_constraintTop_toTopOf="@id/showAllMeasurementsButton"
+        tools:text="@string/newMeasurement"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/showAllMeasurementsButton"
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/showAllMeasurements"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/showAllMeasurements"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

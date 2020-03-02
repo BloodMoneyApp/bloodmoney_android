@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BloodMoney</string>
+    <string name="newMeasurement" translatable="false">Neuer Eintrag</string>
+    <string name="showAllMeasurements">Alle Einträge</string>
+</resources>
