@@ -3,4 +3,6 @@
     <string name="app_name">BloodMoney</string>
     <string name="newMeasurement" translatable="false">Neuer Eintrag</string>
     <string name="showAllMeasurements">Alle Einträge</string>
+    <string name="title_measurement_list">Messungen</string>
+    <string name="title_measurement_detail">Messung Detail</string>
 </resources>
